@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--insert css-->
+    <link rel="stylesheet" href="css/cssGuest.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--meta info-->
+    <meta charset="utf-8" />
+    <meta name="description" content="Registration form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Nasia Boubouraki" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, CSD" />
+
+    <title>Borrow a book</title>
+  </head>
+
+  <body>
+    <script src="js/ajax.js"></script>
+    <div id="navbar">
+      <img
+        class="logo-img"
+        src="img/hogwarts-7936.png"
+        width="50"
+        height="50" 
+        alt="HOGWARTS"
+      />
+      <h2 class="title1">Library Card / Student / Borrow a book</h2>
+    </div>
+    <h1 class="title2">Welcome Student! Enter ISBN for wanted book:</h1>
+
+   
+      <br>
+      <label class="title2">Enter ISBN:</label><form onsubmit="showLibraries(); return false"> <input type="text" id="isbn"/></form>
+
+    <div id="libraries"></div>
+
+  </body>
+</html>

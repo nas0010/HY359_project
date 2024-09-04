@@ -1,0 +1,145 @@
+
+/*insert two different midieval fonts*/
+
+@font-face {
+  font-family: goth;
+  src: url(../img/PERRYGOT.TTF);
+}
+
+@font-face {
+  font-family: goth2;
+  src: url(../img/Miragefinal.ttf);
+}
+/*navigation bar on top*/
+
+#navbar {
+  background-color: rgb(138, 34, 34);
+  position: fixed;
+  top: 0;
+  height: 8%;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  overflow: hidden;
+  filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5));
+  z-index: 5;
+}
+
+/*set background color*/
+body {
+  margin: 0;
+  text-align: center;
+  background: rgb(186, 131, 64);
+}
+/*big container for background and all fieldswith background image*/
+
+/*general right alignment*/
+.title{
+text-align: right;
+}
+/*for required fields*/
+.title3{
+text-align: right;
+text-shadow: #241700;
+}
+/*for navigation bar*/
+.title1{
+  color: #241700;
+  font-style: italic;
+  margin-top: 15px;
+  text-align: left;
+  font-family: goth;
+}/*what the user needs to do*/
+.title2{
+margin-top: 65px;
+color: #241700;
+font-style: italic;
+font-size: small;
+text-align: center;
+font-family: goth;
+}
+
+
+/*add red ssterisk after required field labels*/
+.title3 label::after{
+color: #e32;
+content: ' *';
+display:inline;
+}
+/*register button with imagebackgorund*/
+.but{
+font-family: goth2;
+font-size: medium;
+border: none;
+margin:0%;
+padding:25px;
+height:fit-content !important;
+width:fit-content!important;
+background-image: url("../img/dreamstime_s_251551458-removebg-preview.png");
+background-color:transparent;
+background-size: contain;
+background-position: center center; /* Background image doesn’t tile */ 
+background-repeat: no-repeat; /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */ 
+
+}
+/*set font size for labels*/
+label{
+font-size:x-large;
+}
+/*make size of choises for radio type medium*/
+.choice{
+font-size:medium !important;
+}
+
+/*attributes for my table with the fields*/
+
+.before{
+margin-top: 30px;
+text-align: left;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*custom scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #DCB87C; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #997039;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6f5129;
+}
+/*logo on navigation bar*/
+.logo-img{
+  float: left;
+  position: relative;
+  margin-top: 5px;
+  margin-right: 4px;
+}
+
+.box {
+  display: flex;
+}
+
+.boxbox {
+  flex: 1 1 auto;
+  margin-top: 65px;
+color: #241700;
+font-style: italic;
+font-size: small;
+text-align: center;
+font-family: goth;
+border-style: double;
+border-width: 10px;
+border-radius: 10cm;}

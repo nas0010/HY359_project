@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--insert css-->
+    <link rel="stylesheet" href="css/cssIndex.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--meta info-->
+    <meta charset="utf-8" />
+    <meta name="description" content="Registration form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Nasia Boubouraki" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, CSD" />
+
+    <title>Librarian Home</title>
+  </head>
+
+  <body>
+    <script src="js/ajax.js"></script>
+    <script src="js/restBooks.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <!--navigation bar-->
+    <div id="navbar">
+      <img
+        class="logo-img"
+        src="img/hogwarts-7936.png"
+        width="50"
+        height="50"
+        alt="HOGWARTS"
+      />
+      <h2 class="title1">Library Card / Librarian</h2>
+    </div>
+    <div>
+      <br />
+      <p class="title2">Welcome Librarian! Choose an action:</p>
+
+      <button id="sub" class="but" onclick="window.location.href='changeInfoLibrarian.html'">Change My Info.</button><br /> 
+
+      <button id="sub" class="but" onclick="window.location.href='RegisterBook.html'">Add new book.</button><br /> <!--we may need to mke another html for book registration form-->
+
+      <button id="sub" class="but" onclick="window.location.href='BookAvailability.html'">Change Availability</button><br />
+      
+      <button id="sub" class="but" onclick="ChangeRequest();return false;">See requests.</button><br />
+      
+      <button id="sub" class="but" onclick="showInfoBorrowed(); return false;">See Information .</button><br />
+
+      <div id="requests"></div> <br/>
+
+      <div id="borrowed"></div> <br/>
+      <div id="msg"></div> <br/>
+       <br><button id="sub" class="but" onclick="logout(); return false;" value="Logout">Logout</button><br>
+
+    </div>
+  </body>
+</html>

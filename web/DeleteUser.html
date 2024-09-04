@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--insert css-->
+  <link rel="stylesheet" href="css/cssIndex.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--meta info-->
+  <meta charset="utf-8">
+  <meta name="description" content="Registration form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nasia Boubouraki">
+  <meta name="keywords" content="HTML, CSS, JavaScript, CSD">
+
+  <title>Registration Form</title>
+</head>
+<body>
+  <script src="js/ajax.js"> </script>
+  
+  <!--navigation bar-->
+  <div id="navbar">
+    <img class="logo-img" src="img/hogwarts-7936.png" width="50" height="50" ALT="HOGWARTS">
+    <h2 class="title1">Library Card Registration</h2>
+  </div>
+    <h1 class="title2">Welcome Admin! Select the kind of user to be deleted:</h1>
+    <form onsubmit="deleteUser();return false;"> 
+    <table>
+    <tr>
+          <td class="title3"><label><b>User type:</b></label></td>
+          <td><input type="radio" id="student" name="type_user" value="student" >
+            <!--required-->
+             <label class="choice"  for="student">Student</label>
+              <input type="radio" id="chief" name="type_user" value="librarian" >
+              <label class="choice" for="chief"> Chief of Library</label>
+          </td>
+        </tr>
+    </table>
+      <br>
+      <label class="title2">Enter Username:</label><input type="text" id="Usertype"></form>
+
+    <div ></div>
+
+  </body>
+</html>

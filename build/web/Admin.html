@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--insert css-->
+    <link rel="stylesheet" href="css/cssIndex.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--meta info-->
+    <meta charset="utf-8" />
+    <meta name="description" content="Registration form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Nasia Boubouraki" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, CSD" />
+
+    <title>Registration Form</title>
+  </head>
+
+  <body>
+    <script src="js/ajax.js"></script>
+
+    <!--navigation bar-->
+    <div id="navbar">
+      <img
+        class="logo-img"
+        src="img/hogwarts-7936.png"
+        width="50"
+        height="50"
+        alt="HOGWARTS"
+      />
+      <h2 class="title1">Library Card</h2>
+    </div>
+    <div>
+      <br />
+      <p class="title2">Welcome Admin! Choose an action:</p>
+      <button id="sub" class="but" onclick="students()" value="Login">
+        Show Students.
+      </button>
+
+      <button id="sub" class="but" onclick="librarians()" value="Login">
+        Show Librarians.
+      </button>
+
+      <button id="sub" class="but" onclick="drawChart();return false;" value="Login">
+        Show statistics.
+      </button><br>
+      <div id="tablee"></div>
+      <div id="chart_div"></div>
+      <footer>
+        <p class="title2">
+          <a href="./DeleteUser.html" style="color: #000000"
+            >Delete a user.</a>
+          >
+        </p>
+      </footer>
+       <br><button id="sub" class="but" onclick="logout(); return false;" value="Logout">Logout</button><br>
+
+    </div>
+  </body>
+</html>

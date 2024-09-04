@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--insert css-->
+    <link rel="stylesheet" href="css/cssIndex.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--meta info-->
+    <meta charset="utf-8" />
+    <meta name="description" content="Registration form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Nasia Boubouraki" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, CSD" />
+
+    <title>Register new book</title>
+  </head>
+
+  <body>
+    <script src="js/ajax.js"></script>
+    <script src="js/restBooks.js"></script>
+
+    <!--navigation bar-->
+    <div id="navbar">
+      <img
+        class="logo-img"
+        src="img/hogwarts-7936.png"
+        width="50"
+        height="50"
+        alt="HOGWARTS"
+      />
+      <h2 class="title1">
+        Library Card Registration / Librarian / Register new book
+      </h2>
+    </div>
+    <br />
+
+    <!--form-->
+    <form id="myForm" name="myForm" onsubmit="addBook(); return false;">
+      <div class="container">
+        <p class="title2">
+          Please fill in the details of the new book to be added to the library.
+        </p>
+        <table class="before">
+          <!--ISBN-->
+          <tr id="paso">
+            <td class="title3">
+              <label><b>ISBN:</b></label>
+            </td>
+            <td>
+              <input type="text" id="isbn" name="isbn" pattern="(?=.*[0-9]).{12,12}" />
+              (10 or 13 digits)
+            </td>
+          </tr>
+          <!--Title-->
+          <tr>
+            <td class="title3">
+              <label><b>Title:</b></label>
+            </td>
+            <td>
+              <input type="text" name="title" id="title" />
+            </td>
+          </tr>
+          <!--Authors-->
+          <tr>
+            <td class="title3">
+              <label><b>Authors:</b></label>
+            </td>
+            <td>
+              <input type="text" name="authors" id="authors" />
+            </td>
+          </tr>
+          <!--Genre-->
+          <tr>
+            <td class="title3">
+              <label><b>Genre:</b></label>
+            </td>
+            <td>
+              <input type="text" name="genre" id="genre" />
+            </td>
+          </tr>
+          <!--Pages-->
+          <tr>
+            <td class="title3">
+              <label><b>Pages:</b></label>
+            </td>
+            <td>
+              <input type="text"  name="pages" id="pages" />
+            </td>
+          </tr>
+          <td class="title3">
+            <label><b>Publication year:</b></label>
+          </td>
+          <td>
+            <input type="text"  name="publicationyear" id="publicationyear" />
+          </td>
+          <!--URL-->
+          <tr>
+            <td class="title3">
+              <label><b>URL:</b></label>
+            </td>
+            <td><input type="url" name="url" id="url" /> (valid URL)</td>
+          </tr>
+          <!--Photo-->
+          <tr>
+            <td class="title3">
+              <label><b>Photo:</b></label>
+            </td>
+            <td><input type="url"  name="photo" id="photo" /> (valid URL)</td>
+          </tr>
+        </table>
+      </div>
+      <!--Register-->
+      <br /><button type="submit" id="sub" class="but" value="Register">
+        Register</button
+      ><br />
+    </form>
+    <div id="msg"></div>
+  </body>
+</html>

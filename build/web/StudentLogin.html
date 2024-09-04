@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--insert css-->
+        <link rel="stylesheet" href="css/cssIndex.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--meta info-->
+        <meta charset="utf-8">
+        <meta name="description" content="Registration form">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Nasia Boubouraki">
+        <meta name="keywords" content="HTML, CSS, JavaScript, CSD">
+
+        <title>Registration Form</title>
+    </head>
+
+    <body>
+        <script src="js/ajax.js"></script>
+
+        <!--navigation bar-->
+        <div id="navbar">
+            <img class="logo-img" src="img/hogwarts-7936.png" width="50" height="50" ALT="HOGWARTS">
+            <h2 class="title1">Library Card Student Login</h2>
+        </div>
+
+        <!--form-->
+        <form id="myLForm" name="myLForm" onsubmit="loginStudent(); return false;">
+            <div class="container">
+                <br>
+                <p class="title2">Please fill in your credentials.</p>
+                <table class="before">
+                    <!--Username-->
+                    <tr>
+                        <td class="title3"><label><b>Username:</b></label></td>
+                        <td><input type="text" name="username"  id="username" ></td>
+                        <!--required-->
+                    </tr>
+                    <tr>
+                        <td class="title3"><label><b>Password:</b></label></td>
+                        <td><input type="password" name="password" id="psw" ></td>
+                        <!--required -->
+                    </tr>
+                    
+                    </table>
+                    <br><button type="submit" id="sub" class="but" value="Login">Login</button><br>
+                
+            </div>
+
+        </form>
+    </body>
+
+</html>
